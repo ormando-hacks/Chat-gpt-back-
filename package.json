@@ -1,0 +1,26 @@
+{
+  "name": "ai-premium-backend",
+  "version": "3.10.0",
+  "description": "AI Premium Backend with provider-agnostic AI orchestration, Gemini support, Hugging Face FLUX.1-schnell image generation, knowledge tools, file inspection, accounts, and WhatsApp .gpt invocation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node -e \"const fs=require('fs'); for(const f of fs.readdirSync('.').filter(x=>x.endsWith('.js'))){require('child_process').execFileSync(process.execPath,['--check',f],{stdio:'inherit'})}\""
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "6.7.23",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-cache": "^5.1.2",
+    "openai": "^4.82.0",
+    "pino": "^9.6.0",
+    "uuid": "^11.0.5",
+    "pg": "^8.13.1",
+    "@google/genai": "^2.13.0",
+    "multer": "^2.0.2",
+    "@huggingface/inference": "^4.13.23"
+  }
+}
